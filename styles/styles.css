@@ -9,70 +9,118 @@
   --White: hsl(0, 0%, 100%);
   --Gray-500: hsl(0, 0%, 42%);
   --Gray-950: hsl(0, 0%, 7%);
-  --font: font-family: "Figtree", sans-serif;
+  --font: "Figtree", sans-serif;
 }
 body {
   background-color: var(--Yellow);
   font-family: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
   
 }
 
 main {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+
 }
 
 .container {
   background-color: var(--White);
-  max-width: 700px;
-  width: 20%;
+  max-width: 100%;
+  width: 384px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+ 
 
-  border: solid 1px black;
-  border-radius: 15px;
-  box-shadow: 10px 10px 0px black;
+  border: solid 1px var(--Gray-950);
+  border-radius: 10px;
+  box-shadow: 8px 8px 0px black;
 
   padding: 24px;
 }
 
 
-.container img{
-    border-radius: 8px ;
+.image img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-
-
-    padding: 24px 0;
+    gap: 12px;
+    padding: 20px 0;
 }
-.btn-state{
-    height: 30px;
-    width: 90px;
-    font-weight:800;
-    border: 0;
-    border-radius: 5px;
+
+.badge{
     background-color: var(--Yellow);
-}
-
-.content span{
+    width: 70px;
+    font-weight:800;
     font-size: 14px;
-    padding-top: 10px;
-    font-weight: 500;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
 }
 
-.content h1{
+.date{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Gray-950);
+
+}
+
+.content h1 a{
     font-size: 24px;
     font-weight: 800;
-    line-height: 1.5;
-    padding: 8px 0px;
+    color: var(--Gray-950);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.content h1 a:hover{
+  cursor: pointer;
+  color: var(--Yellow);
 }
 
 .content p{
     color: var(--Gray-500);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+p:hover
+{
+  color: var(--Gray-950);
+  cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--Gray-950);
+
+}
+
+.profile img{
+   width:  35px;
+   margin-right: 10px;
+}
+
+
+.attribution{
+  text-align: center;
+  font-size: 11px;
+  margin-top: 20px;
+  color: var(--Gray-950);
 }
