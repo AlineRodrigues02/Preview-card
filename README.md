@@ -40,3 +40,8 @@ Os usuários devem ser capazes de:
 ### O que eu aprendi
 
 Neste projeto, pratiquei a estruturação precisa de componentes de cartão (cards), aplicando sombras sólidas e bordas definidas alinhadas ao design system proposto.
+
+
+## Autor
+
+- Frontend Mentor - @AlineRodrigues02
